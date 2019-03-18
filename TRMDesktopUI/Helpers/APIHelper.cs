@@ -31,7 +31,7 @@ namespace TRMDesktopUI.Helpers
 
         public async Task<AuthenticatedUser> Authenticate(string username, string password)
         {
-            var data = new FormUrlEncodedContent(new[]
+            FormUrlEncodedContent data = new FormUrlEncodedContent(new[]
             {
                 new KeyValuePair<string, string>("grant_type", "password"),
                 new KeyValuePair<string, string>("username", username),
