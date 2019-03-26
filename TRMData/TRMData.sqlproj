@@ -61,10 +61,7 @@
     <Folder Include="dbo\Tables" />
     <Folder Include="dbo\Views" />
     <Folder Include="dbo\Stored Procedures" />
-    <Folder Include="PublishLocation" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="PublishLocation\TRMData.publish.xml" />
+    <Folder Include="PublishLocations" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\User.sql" />
@@ -72,5 +69,9 @@
     <Build Include="dbo\Tables\SaleDetail.sql" />
     <Build Include="dbo\Tables\Product.sql" />
     <Build Include="dbo\Tables\Inventory.sql" />
+    <Build Include="dbo\Stored Procedures\spUserLookup.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PublishLocations\TRMData.publish.xml" />
   </ItemGroup>
 </Project>
